@@ -28,7 +28,7 @@ services:
         npx prisma generate &&
         npx prisma db seed &&
         (npx prisma studio --port 5555 --hostname 0.0.0.0 & echo '✨ Prisma Studio is running at http://localhost:5555') &&
-        npm run dev
+        npm run start
       "
     networks:
       - app_network
